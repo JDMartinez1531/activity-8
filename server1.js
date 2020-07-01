@@ -21,12 +21,17 @@ var darthmaul = {
   forcePoints: 1200
 };
 
-// Create one more data entry for the character Obi Wan Kenobi.
+// Create one more data entry for the character Obi Wan Kenobi
 // Enter any values you like for the parameters following the same format as the Yoda and Darth Maul character
 //
 
 // YOUR CODE GOES HERE
-
+var obiWanKenobi = {
+  name: "Obi-Wan Kenobi",
+  role: "Jedi High Counsil",
+  age: 25,
+  forcePoints: 1300
+};
 //
 
 // Routes
@@ -50,7 +55,9 @@ app.get("/darthmaul", function(req, res) {
 // YOUR CODE GOES HERE
 //
 //
-
+app.get("/obiwankenobi", function(req, res) {
+  res.json(obiWanKenobi);
+});
 // Listener
 // ===========================================================
 app.listen(PORT, function() {
